@@ -179,7 +179,7 @@ class DonchianStrategy:
         return dollar_risk
     
     def _size_position(self, data:pd.DataFrame, dollar_risk:float, ticker:str) -> int:
-        """This checks the multipliers to ensure the adequate number of shares is bought/sold. After assessing multipliers, we normalize risk by diving our dollar risk value by a multiple of ATR.
+        """This checks the multipliers to ensure the adequate number of shares is bought/sold. After assessing multipliers, we normalize risk by dividing our dollar risk value by a multiple of ATR.
 
         Args:
             data (pd.DataFrame): The large data frame consisting all of markets and indicators.
